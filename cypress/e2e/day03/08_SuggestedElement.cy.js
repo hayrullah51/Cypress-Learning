@@ -12,7 +12,5 @@ describe("Suggested Elements", () => {
     
   });
 
-  it("Test Case 2", () => {
-    cy.visit("https://www.amazon.com/");
-  });
+ 
 });
