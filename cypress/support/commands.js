@@ -23,3 +23,18 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('auEx_login', (email, password) => {
+  cy.visit("https://www.automationexercise.com/");
+  cy.get(".shop-menu > .nav > :nth-child(4) > a").click();
+  cy.get('[data-qa="login-email"]').type(email);
+  cy.get('[data-qa="login-password"]').type(password);
+  cy.get('[data-qa="login-button"]').click();
+
+});
+
+Cypress.Commands.add('amazonUrunArama',(urunAdi) =>{
+  cy.visit('https://www.amazon.com/')
+  cy.get('#twotabsearchtextbox').type(urunAdi)
+  cy.get('#nav-search-submit-button').click()
+})
