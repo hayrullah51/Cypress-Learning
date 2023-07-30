@@ -43,8 +43,7 @@ describe('Parabank Bank', ()=>{
 
 
         cy.get('[colspan="2"] > .button').click()
-        // password X404btv3QQcT7st
-        // username Dejon
+        
 
 
 
